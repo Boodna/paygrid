@@ -1,6 +1,6 @@
-# PayGrid Nexus — Autonomous Agentic Escrow, AI Proof-of-Delivery & AG Grid Command Center on PayPal
+# PayGrid — Autonomous Agentic Escrow, AI Proof-of-Delivery & AG Grid Command Center on PayPal
 
-Built for the **PayPal AI Hackathon 2026**, **PayGrid Nexus** solves the two biggest roadblocks preventing enterprise adoption of **Autonomous Agentic Commerce**:
+Built for the **PayPal AI Hackathon 2026**, **PayGrid** solves the two biggest roadblocks preventing enterprise adoption of **Autonomous Agentic Commerce**:
 
 1. **Prompt-Injection Financial Hijacking (OWASP LLM01)**: When an autonomous AI agent reads untrusted vendor invoices, memos, or web deliverables, hidden adversarial instructions can trick the agent into overriding policies and siphoning unauthorized payments.
 2. **Blind Pre-Payment Without Delivery Verification**: Standard agent toolkits fire immediate payments before verifying whether the vendor agent actually delivered functional code, passing unit test hashes, or SLA-compliant metrics.
@@ -45,10 +45,10 @@ flowchart LR
 
 ## Quick Start (Zero Dependencies — Runs in 5 Seconds!)
 
-PayGrid Nexus uses pure Node.js 18+ built-in `fetch`, `http`, and `crypto` modules on the backend and **AG Grid** on the frontend—meaning **zero `npm install` wait time**!
+PayGrid uses pure Node.js 18+ built-in `fetch`, `http`, and `crypto` modules on the backend and **AG Grid** on the frontend—meaning **zero `npm install` wait time**!
 
 ```bash
-# 1. Start the PayGrid Nexus server & AG Grid Dashboard at http://localhost:3000
+# 1. Start the PayGrid server & AG Grid Dashboard at http://localhost:3000
 npm start
 
 # 2. In a second terminal, run the autonomous multi-agent negotiation engine:
@@ -71,14 +71,14 @@ ANTHROPIC_WORKSPACE_ID="your_optional_workspace_id"
 ANTHROPIC_MODEL="claude-sonnet-4-5-20250929"
 ```
 
-*Note: If run without keys, PayGrid Nexus automatically falls back to high-fidelity built-in sandbox mocks so judges can test every feature instantly.*
+*Note: If run without keys, PayGrid automatically falls back to high-fidelity built-in sandbox mocks so judges can test every feature instantly.*
 
 ---
 
 ## Live Multi-Agent Negotiation Demo Output
 
 ```text
-🚀 Starting PayGrid Nexus Autonomous Multi-Agent Commerce Session
+🚀 Starting PayGrid Autonomous Multi-Agent Commerce Session
    AI Engine: Claude Sonnet (claude-sonnet-4-5-20250929)
 
 🤝 NEGOTIATION SESSION: Fine-tune DeepSeek-Coder on 40k API logs
@@ -91,7 +91,7 @@ ANTHROPIC_MODEL="claude-sonnet-4-5-20250929"
 
 ✨ [CONSENSUS REACHED] Agreed Escrow Amount: $925 USD (Down from $1100)
 
-🛡️ Submitting to PayGrid Nexus SpendGuard AI Firewall...
+🛡️ Submitting to PayGrid SpendGuard AI Firewall...
    ❌ [BLOCKED BY SPENDGUARD FIREWALL]
       Reason: Critical security violations detected: (1) SHA256 hash provided
       is the empty string hash (e3b0c442...), indicating no legitimate proof
@@ -102,7 +102,7 @@ ANTHROPIC_MODEL="claude-sonnet-4-5-20250929"
    Vendor: CertiSec-Formal-Logic-Lab (Initial Ask: $1750)
 
 ✨ [CONSENSUS REACHED] Agreed Escrow Amount: $1450 USD
-🛡️ Submitting to PayGrid Nexus SpendGuard AI Firewall...
+🛡️ Submitting to PayGrid SpendGuard AI Firewall...
    ✅ [PAYPAL ESCROW ORDER CREATED]
       PayPal Order ID : 7RB24471R31112630
       Status          : CREATED

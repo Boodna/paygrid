@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * PayGrid Nexus — Zero-Dependency Node.js Server + PayPal Sandbox v2 API Integration
+ * PayGrid — Zero-Dependency Node.js Server + PayPal Sandbox v2 API Integration
  * Supports:
  *  - Real PayPal Sandbox OAuth2 (`/v1/oauth2/token`) when PAYPAL_CLIENT_ID & PAYPAL_CLIENT_SECRET are set
  *  - Real PayPal Orders v2 Creation (`/v2/checkout/orders`) & Capture (`/v2/checkout/orders/:id/capture`)
@@ -304,7 +304,7 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`\n======================================================================`);
-  console.log(`  PayGrid Nexus — Autonomous Agentic Escrow & AG Grid Command Center`);
+  console.log(`  PayGrid — Autonomous Agentic Escrow & AG Grid Command Center`);
   console.log(`  Local Dashboard : http://localhost:${PORT}`);
   console.log(`  PayPal Sandbox  : ${PAYPAL_CLIENT_ID ? "Live OAuth2 Credentials Configured" : "Instant Sandbox Simulation Mode (Set PAYPAL_CLIENT_ID for live API)"}`);
   console.log(`======================================================================\n`);
