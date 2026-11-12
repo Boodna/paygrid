@@ -1,0 +1,12 @@
+{
+  "name": "paygrid-nexus-paypal-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PayGrid Nexus: Autonomous Agentic B2B Escrow, AI Proof-of-Delivery Auditor & AG Grid Command Center on PayPal Sandbox",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "demo-agents": "node scripts/run_agent_commerce.mjs"
+  }
+}
