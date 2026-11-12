@@ -13,6 +13,22 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
+// Automatically load local .env file if present
+const envPath = path.join(path.dirname(fileURLToPath(import.meta.url)), ".env");
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, "utf8");
+  for (const line of envContent.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const eqIdx = trimmed.indexOf("=");
+    if (eqIdx !== -1) {
+      const key = trimmed.slice(0, eqIdx).trim();
+      const val = trimmed.slice(eqIdx + 1).trim();
+      if (!process.env[key]) process.env[key] = val;
+    }
+  }
+}
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 3000);
 const PAYPAL_BASE_URL = process.env.PAYPAL_BASE_URL || "https://api-m.sandbox.paypal.com";
